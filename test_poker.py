@@ -1,8 +1,10 @@
+import pytest
 import unittest
 from expects import expect, equal
 
 
 class PokerKataAcceptance(unittest.TestCase):
+    # @pytest.mark.skip
     def test_hand_ranking(self):
         hands = []
         hands.append(PokerHand("KS 2H 5C JD TD"))
